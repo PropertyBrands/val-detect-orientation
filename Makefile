@@ -14,7 +14,7 @@ BINARY_DIR=./bin
 
 all:
 	mkdir -p $(BINARY_DIR)
-	$(CC) detect_orientation.cpp $(CFLAGS) $(INCLUDES) $(LDFLAGS) \
+	$(CC) src/detect_orientation.cpp $(CFLAGS) $(INCLUDES) $(LDFLAGS) \
 		-o $(BINARY_DIR)/detect_orientation
 
 clean:
