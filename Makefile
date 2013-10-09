@@ -18,4 +18,5 @@ all:
 		-o $(BINARY_DIR)/detect_orientation
 
 clean:
-	rm $(BINARY_DIR)/detect_orientation
+	rm --force $(BINARY_DIR)/detect_orientation
+	rmdir --ignore-fail-on-non-empty $(BINARY_DIR)
