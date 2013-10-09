@@ -23,7 +23,7 @@ int main( int argc, char *argv[] ) {
   Pix *image = pixRead(file);
   tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
   // Initialize tesseract-ocr with English, without specifying tessdata path
-  if (api->Init(NULL, "eng")) {
+  if (api->Init(NULL, "osd")) {
     fprintf(stderr, "Could not initialize tesseract.\n");
     exit(1);
   }
