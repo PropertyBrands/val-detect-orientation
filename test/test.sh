@@ -60,3 +60,8 @@ echo "Running through image files with known results..."
 test_image ./test/orientation_0-1.pbm ./test/orientation_0-1.expected
 test_image ./test/orientation_3-1.pbm ./test/orientation_3-1.expected
 test_image ./test/orientation_3-2.pbm ./test/orientation_3-2.expected
+
+echo
+echo "Weak Margin Tests..."
+# Weak margin (4.61)
+test_image ./test/orientation_2-1_weak_margin.pbm ./test/orientation_2-1_weak_margin.expected

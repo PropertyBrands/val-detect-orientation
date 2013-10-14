@@ -29,6 +29,7 @@ int main( int argc, char *argv[] ) {
   }
 
   api->SetPageSegMode(tesseract::PSM_AUTO_OSD);
+  api->set_min_orientation_margin(4.0);
   api->SetImage(image);
 
   tesseract::PageIterator* it =  api->AnalyseLayout();
