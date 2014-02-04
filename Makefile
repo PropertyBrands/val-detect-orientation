@@ -2,8 +2,8 @@
 CC=g++
 CFLAGS=
 LDFLAGS= -Wl,-static -ltesseract -llept -Wl,-Bdynamic -Wl,--as-needed \
-				 -lpthread -lz -lm -ljpeg -ltiff -lpng
-INCLUDES=-I/usr/include/tesseract -I/usr/local/include/leptonica
+				 -lpthread -lz -lm -ljpeg -ltiff -lpng -lwebp -lgif
+INCLUDES=-I/usr/include/tesseract -I/usr/include/leptonica
 
 # If needing to include from a local build
 #INCLUDES=-I../tesseract-ocr/api -I../tesseract-ocr/ccstruct \

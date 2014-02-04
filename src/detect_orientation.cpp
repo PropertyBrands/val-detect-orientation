@@ -1,5 +1,6 @@
 #include <baseapi.h>    // tesseract
 #include <allheaders.h> // leptonica
+#include <pageiterator.h> // tesseract
 
 #include <iostream>
 
